@@ -1,0 +1,303 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+   width: 90%; 
+   position: relative;
+   margin:0 auto ;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 2px 2px 2px 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration:none;   
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width:90%;
+    margin: 0 auto;
+    padding:15%
+}
+
+.productos li{
+    display:inline-block;
+    text-align: center;
+    width:25%;
+    vertical-align:top;
+    margin: 0 1.5%;
+    padding:3% 2%;
+    box-sizing:border-box;
+    border:3px solid #000000 ;  
+    border-radius: 17px;
+    
+    }
+.productos img{
+    width:80%
+}
+ .productos li:hover{
+    border-color: #c78c19;
+    font-size: 1.05em;
+    border-radius: 100px;
+    padding: auto;
+
+    }
+
+.productos li:hover h2{ 
+    font-size: 1em;
+    }
+
+.productos li:active{
+    border-color:limegreen;
+    }
+
+.productos h2{
+    font-size:1.2em;
+    font-weight: bold;  
+}
+
+.producto-descripcion{
+    font-size: 0.8em;
+}
+
+.producto-precio{
+    font-size: 0.9em;
+    font-weight: bolder;
+}
+
+footer{
+    
+    padding: 50px;
+    text-align: center;
+    background:url(imagenes/imagenes/bg.jpg);
+    background-position: bottom;
+    color: #FFFFFF ;
+ 
+}
+
+
+
+form{
+    padding-left: 5%;
+  
+    margin:40px 0
+}
+form label, form legend{
+    display:block;
+    font-size: 22px;
+    margin: 0 0 22px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    
+}
+
+.input-padron{
+    display:block;
+    margin:0 0 22px ;
+    padding: 10px 25px;
+    width: 50%
+}
+input.radio{
+    margin:15px 15px
+}
+
+.submit{
+    width:45%;
+    padding: 15px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background:#bd4e05;
+    border: none;
+    border-radius: 8px;
+    transition: 3s all;
+    cursor: pointer;
+
+}
+
+.submit:hover{
+    background:#462691;
+    transform: scale(1.1) ;
+    
+    
+ }
+
+ table{
+    margin: 40px 40px;
+    
+ }
+ thead{
+    background: #BBBBBB;
+    color:white;
+    font-weight: bold;
+ }
+
+ td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+ }
+
+ .banner{
+    width: 100%;
+}
+
+
+.titulo-principal{
+    padding-left:30%;
+    background: #314159;
+    color:#f5ddae;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear:left
+} 
+.titulo-principal:first-letter{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.principal{
+    margin: 0 0 1em; 
+  
+}
+.contenido-principal{
+    width:75%;
+    margin-left: 12.5%;
+}
+.principal strong{
+    font-weight: bold;
+   
+}
+.principal em{
+    font-style: italic;
+    
+}
+.utensilios{
+   width:100px;
+   float: left;
+   Margin: 0 20px 20px 20px;
+}
+
+.mapa{
+    background:linear-gradient(#314159 5%, rgb(255, 209, 2) ,red , #314159 98%);
+    padding-bottom: 20px;
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+    font-weight: bolder;
+}
+.mapa-contenido{
+    width:65%;
+    margin-left: 17.5%;
+    
+}
+section div iframe{
+    width:100%
+}
+
+
+/*ACA comienzan los diferenciales*/
+
+.diferenciales{
+    background:linear-gradient(#314159 5%,#36dd14 , #330075 95%);
+
+    padding: 0px;
+    
+    width:100%
+} 
+
+.items{
+    line-height: 1.5;
+
+}
+.items:first-child{
+    font-weight: bold;
+}
+.items:before{
+    content: "★"
+}
+
+.lista-diferenciales{
+    display:inline-block;
+    vertical-align: top;
+    width:35%;
+    padding-right: 10px;
+}
+
+
+.contenido-diferenciales{
+    width:75%;
+    margin-left: 17.5%;
+}
+
+.imagen-diferenciales{
+    width:45%;
+    transition: 4000ms;
+    box-shadow:10px 10px 40px 15px black;
+    
+}
+
+   
+
+.imagen-diferenciales:hover{
+ opacity: 0.4;
+ transition: 4000ms;
+ 
+}
+.video{
+    background:linear-gradient(#330075 5%, #000000 95%);
+    padding:3%
+   
+   
+}
+.video-contenido{
+    margin-left:25%; 
+    width:50%;
+    height:auto
+}
+
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .contenido-diferenciales{
+        width:auto;
+        height: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales, .contenido-diferenciales{
+        width: 100%;
+        margin: 0;
+    }
+    .lista-diferenciales{
+        margin-left:17.5%
+    }
+
+    .productos div{
+        height: 60px;
+    }
+    
+}
